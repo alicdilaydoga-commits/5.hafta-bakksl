@@ -1,0 +1,45 @@
+create database bakkal;
+ go 
+use bakkal;
+go 
+create table bakkal(
+bakkal_id int,
+bakkal_adi nchar,
+toptanci_id
+)
+create table musteriler(
+musteri_id int,
+musteri_adi varchar(10),
+musteri_adresi nchar,
+)
+create table urunler(
+urun_id int,
+urun_adi nchar,
+urun_skt datetime,
+urun_alisf int,
+urun_satisf int,
+urun_adedi int,
+)
+create table borclu_musteriler(
+borc_id int,
+borc_tutari int,
+musteri_adi varchar(10),
+odenme_durumu nchar,
+)
+create table toptanci(
+toptanci_id int,
+urun_adi nchar,
+urun_alisf int,
+)
+create table online_siparisss(
+siparis_id int,
+musteri_id int,
+bakkal_id int,
+musteri_adresi nchar,
+urun_adi nchar,
+urun_id int,
+)
+create table dilay_doga_duygulu(
+ogrenci_id int,
+ogrenci_adi nchar,
+)
